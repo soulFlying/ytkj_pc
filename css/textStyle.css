@@ -1,0 +1,103 @@
+﻿@charset "utf-8";
+/*----------------公共样式开始--------------------------------------*/
+*{margin:0;padding:0;font-family:'PingHei', 'PingFang SC',"Microsoft YaHei", 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;font-weight:400;}
+body{font-size:14px;min-width:320px;}
+ul,li,ol,dl,dt,dd{list-style:none;}
+h1,h2,h3,h4,h5,h6,p,span,b,i,input,a{font-size:14px;}
+a{text-decoration:none;}
+a:hover{color:#eb6000;}
+img{margin:0;padding:0;border:none; vertical-align:middle;}
+video{margin:0;padding:0;}
+input{ -webkit-appearance: none; }
+.clear{clear:both;}
+.w{width:1210px;margin:0 auto;}
+.pointer{cursor:pointer;}
+/*--------footer开始------------*/
+#footer{clear:both;width:100%;height:105px;background-color:#CBCBCB;overflow:hidden;}
+#footer
+
+/*-------------------公共样式header开始----------------------------------------------*/
+#header{width:100%;height:70px;background:#fff;border-top:2px solid #EB6000;position:fixed;left:0;top:0;z-index:999;border-bottom:2px solid #eee;}
+#header .headerc{width:91.7%;height:70px;margin:0 auto;position:relative;}
+#header .headerc .headlogo{width:82px;height:38px;margin-top:15px;float:left;}
+#header .headerc .headlogo a{display:block;width:100%;height:100%;background:url(../../ethome/images/homeLogo.png) no-repeat center center;}
+#header .headerc h2{font-size:22px;line-height:22px;margin:27px 0 0 9px;float:left;color:#666;}
+#header .headerc .et_shop{width:110px;float:right;margin:22px 60px 0 0;cursor:pointer;}
+#header .headerc .et_shop i{display:inline-block;float:left;margin-right:10px;width:27px;height:25px;background:url(../images/icon_head.png) no-repeat 0 0;}
+#header .headerc .zlfw{width:112px;float:right;margin:21px 60px 0 0;cursor:pointer;}
+#header .headerc .zlfw i{display:inline-block;float:left;margin-right:10px;width:30px;height:26px;background:url(../images/icon_head.png) no-repeat 0 -74px;}
+#header .headerc .zlfw a,#header .headerc .et_shop a{font-size:18px;color:#333;}
+
+#header .headerc .et400{width:170px;float:right;font-size:18px;color:#eb6406;margin:21px 0 0 0;cursor:pointer;}
+#header .headerc .et400 i{display:inline-block;float:left;margin-right:10px;width:24px;height:24px;background:url(../images/icon_head.png) no-repeat 0 -154px;}
+
+
+
+
+#header .menu,#header .menubtn,#header .icon_h_line,#header .headerc .headcwzl a{display:none;}
+/*--------------------公共样式header结束----------------------------------------------*/
+/*--------------------------service,law,us.offer--------------------------------------*/
+.con_head{width:100%;height:205px;background:#7d7d7d;margin-top:75px;position:relative;}
+.con_head .icon_service,.con_head .icon_law{width:42px;height:42px;background:url(../images/icon_service.png) no-repeat center center;background-size:42px 42px;position:absolute;left:50%;margin-left:-21px;top:59px;}
+.con_head .icon_law{background:url(../images/icon_law.png) no-repeat center center;}
+.con_head .icon_us{width:51px;height:43px;background:url(../images/icon_us.png) no-repeat center center;background-size:51px 43px;position:absolute;left:50%;margin-left:-21px;top:65px;}
+.con_head .icon_addus{width:47px;height:43px;background:url(../images/icon_addus.png) no-repeat center center;background-size:47px 43px;position:absolute;left:50%;margin-left:-23.5px;top:65px;}
+.con_head .con_head_t{width:178px;border-top:1px solid #fff;position:absolute;left:50%;margin-left:-89px;top:116px;font-size:18px;color:#fff;text-align:center;padding-top:17px;}
+.com_head .icon_us+.con_head_t{top:119px;}
+.con_text{width:75%;height:100%;margin:0 auto;padding-bottom:130px;}
+.con_text h2{font-size:22px;color:#333;line-height:138px;text-align:center;}
+.con_text .con_tstk{font-size:20px;line-height:20px;color:#333;border-left:2px solid #f27825;padding-left:6px;margin:9px 0px 32px;}
+.con_text .date{font-size:16px;color:#666;float:right;margin-right:57px;}
+.con_text p,.con_textp{font-size:18px;color:#666;line-height:40px;}
+.color2{color:#222;}
+.color3{color:#333;}
+.color4{color:#444;}
+.color5{color:#555;}
+.color6{color:#666;}
+.color_c{color:#f67e1e;}
+.underline{text-decoration:underline;}
+.con_text h3{font-size:21px;color:#444;line-height:51px;margin-top:18px;}
+.con_text h4{font-size:19px;color:#444;line-height:49px;margin-top:19px;}
+.con_text h5{font-size:18px;color:#444;line-height:34px;margin-top:6px;}
+.con_text .con_text_t{width:133px;font-size:22px;color:#333;margin:0 auto;padding:44px 0 7px 0;border-bottom:3px solid #909090;text-align:center;}
+#law p{text-indent:37px;}
+#us p{text-indent:37px;line-height:36px;}
+#us .us_t{width:82%;text-align: center;line-height:36px;text-indent:0;margin:51px auto 0;}
+#us .us_hj{width:1000px;height:422px;margin:73px auto 92px;background:url(../images/us_hj.jpg) no-repeat center center;background-size:1000px 422px;}
+#us .us_lz{width:1000px;height:189px;margin:0 auto;background:url(../images/us_lz.jpg) no-repeat center center;background-size:1000px 189px;}
+#us .us_dz{width:64%;text-indent:0;text-align:center;background:url(../images/icon_zb.png) no-repeat left 37px;margin-left:18%;padding:50px 0 12px;}
+#dituContent{width:100%;height:502px;margin:0 auto;}
+.iw_poi_title{color:#7d7d7d;font-size:18px;text-align:center;padding-left:71px;}
+.iw_poi_content{color:#7d7d7d;font-size:18px;padding:6px 0 0 48px;}
+
+.addus_tg{width:100%;height:222px;margin-top:62px;position:relative;}
+.tg1,.tg2,.tg3,.tg4,.tg5,.tg6{width:70px;height:100%;position:absolute;top:0;left:8.3%;margin-left:-35px;}
+.tg2{width:71px;left:25%;margin-left:-35.5px;}
+.tg3{width:70px;left:41.7%;margin-left:-35px;}
+.tg4{width:71px;left:58.3%;margin-left:-35.5px;}
+.tg5{width:99px;left:75%;margin-left:-49.5px;}
+.tg6{width:85px;left:91.7%;margin-left:-4.5px;}
+.tg1 .icon_tg{display:block;width:70px;height:70px;margin:2px 0 20px;background:url(../images/icon_addus_1.png) no-repeat center center;background-size:70px 70px;}
+.tg2 .icon_tg{display:block;width:71px;height:71px;margin:1px 0 21px;background:url(../images/icon_addus_2.png) no-repeat center center;background-size:71px 71px;}
+.tg3 .icon_tg{display:block;width:70px;height:71px;margin:0px 0 22px;background:url(../images/icon_addus_3.png) no-repeat center center;background-size:70px 71px;}
+.tg4 .icon_tg{display:block;width:71px;height:71px;margin:2px 0 22px;background:url(../images/icon_addus_4.png) no-repeat center center;background-size:71px 71px;}
+.tg5 .icon_tg{display:block;width:67px;height:69px;margin:1px 0 30px 15px;background:url(../images/icon_addus_5.png) no-repeat center center;background-size:67px 69px;}
+.tg6 .icon_tg{display:block;width:71px;height:71px;margin:1px 0 21px 14px;background:url(../images/icon_addus_6.png) no-repeat center center;background-size:71px 71px;}
+.tg1 p,.tg2 p,.tg3 p,.tg4 p,.tg5 p,.tg6 p{font-size:14px;color:#666;line-height:18px;text-align:center;}
+.addus_tg>p{width:100%;font-size:18px;line-height:18px;color:#666;text-align:center;position:absolute;left:0;bottom:15px;}
+
+#offer{width:937px;height:100%;overflow:hidden;color:#666;background:#fff;margin:60px 0 0 63px;}
+#offer .offerb{margin-left:8px;}
+#offer h3{font-size:18px;margin:7px 0;}
+#offer p{line-height:36px;font-size:16px;text-indent:32px;}
+#offer button{font-size:18px;color:#EB6000;text-decoration:none;padding-right:42px;text-align:left;border: none;margin:12px 0;}
+.icon_show{background:#fff url(../images/icon_show.png) no-repeat right center; }
+.icon_hide{background:#fff url(../images/icon_hide.png) no-repeat right center; }
+#offer .otext{display: none;opacity: 0.8;}
+
+/*-------------------兼容1025-1200----------------------------------------------*/
+@media only screen and (max-width:1210px) {
+html{overflow-x:scroll;}
+}
+/*------------------兼容1025-1200----------------------------------------------*/
+

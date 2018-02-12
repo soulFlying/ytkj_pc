@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/law_service.css" />
+    <link rel="shortcut icon" href="http://img.ppx.easyto.com/images/front/imgPc/logo.ico">
+</head>
+<body>
+<header id="header"></header>
+<!-------------------------content-------------------------------------------------------->
+<div class="container-fluid about_us">
+    <div class="row"><img class="us_banner" src="http://img.ppx.easyto.com/images/front/imgPc/us.png"></div>
+    <div class="title row">
+        <h1><img src="http://img.ppx.easyto.com/images/front/imgPc/us_icon.png">关于我们</h1>
+        <p>2016年1月，逸途（北京）科技有限公司在北京成立。<br />
+        逸途科技以“集万千人的力量为你一人服务”为使命，致力用人工智能技术来为当下用户提供更智能便捷的体验。</p>
+    </div>
+    <div class="row us_robots">
+        <div class="col-md-3 col-sm-4 col-xs-6"><div><img src="http://img.ppx.easyto.com/images/front/imgPc/left45.png"></div></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><div><img src="http://img.ppx.easyto.com/images/front/imgPc/face.png"></div></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><div><img src="http://img.ppx.easyto.com/images/front/imgPc/right45.png"></div></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><div><img src="http://img.ppx.easyto.com/images/front/imgPc/left45down.png"></div></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><div><img src="http://img.ppx.easyto.com/images/front/imgPc/back.png"></div></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><div><img src="http://img.ppx.easyto.com/images/front/imgPc/right.png"></div></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><div><img src="http://img.ppx.easyto.com/images/front/imgPc/right45down.png"></div></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><div><img src="http://img.ppx.easyto.com/images/front/imgPc/left.png"></div></div>
+    </div>
+    <p>目前，逸途科技将人工智能和专家服务相结合，用大数据为用户制定最适合的旅行方案，主要体现为人工智能机器人在旅游领域的应用。<br/><br/>
+    人工智能机器人拥有3D交互、情感互动、信息咨询、自我学习等功能，同时自身拥有持续交互、主题相关、学习进化、开放获取的技术能力，<br />
+    可以为用户提供私人导游、行程方案咨询、即时翻译、问路指南等服务。让旅行的朋友在出游娱乐的同时，享受到更科技智能的服务。<br/><br/>
+    逸途科技未来的美好愿景是<a>以人工智能推动传统旅游行业进步，以更有效更优质的体验为每一位用户服务。</a></p>
+    <div class="row partner">
+        <h1><a>我们来自</a></h1>
+        <img src="http://img.ppx.easyto.com/images/front/imgPc/partner.png">
+        <p>我们愿意用超过十年的业务及管理经验，丰富的境内外资源，通过基于VOIP、LBS\IM等技术的IT系统，结合境外真实的服务团队，为渴望轻奢的旅行提供一场<br/>真正的旅行，一场境外深度的旅行，以真实为主，以体验为本。</p>
+        <h1 style="padding: 5% 0 2.5%"><a>联系我们</a></h1>
+        <p>新浪微博：@逸途旅行easyto</p>
+        <p>微信订阅号：逸途旅行（easyto）每日发布新鲜实用的旅游咨询</p>
+        <p>微信服务号：逸途旅行（easyto）发布境外特色体验等旅行产品，你的旅行预约助手</p>
+        <p>服务咨询：北京400-178-6881</p>
+        <p>加入我们：请将简历寄至pj@easyto.com我们会有人与你联络。</p>
+        <br/>
+        <p>地址：朝阳区酒仙桥路4号宏源大厦（海航旅游大厦）19层1904</p>
+    </div>
+    <div class="row map">
+        <img src="http://img.ppx.easyto.com/images/front/imgPc/gps_icon.png">
+        <div id="map"></div>
+    </div>
+    <!-------------------------content-------------------------------------------------------->
+</div>
+<footer id="footer"></footer>
+</body>
+<script src="js/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=HtKZu6WlSCA4wfeEzNl2Fq2XLjpVe8ED"></script>
+<!--<script src="js/map.js"></script>-->
+<script>
+    $(function(){
+        $('#header').load('header.html');
+        $('#footer').load('footer.html');
+
+        //创建和初始化地图函数：
+        function initMap(){
+            createMap();//创建地图
+            setMapEvent();//设置地图事件
+            addMapControl();//向地图添加控件
+            addMapOverlay();//向地图添加覆盖物
+        }
+        function createMap(){
+            map = new BMap.Map("map");
+            map.centerAndZoom(new BMap.Point(116.49751,39.990994),18);
+        }
+        function setMapEvent(){
+            map.enableScrollWheelZoom();
+            map.enableKeyboard();
+            map.enableDragging();
+            map.enableDoubleClickZoom()
+        }
+        function addClickHandler(target,window){
+            target.addEventListener("click",function(){
+                target.openInfoWindow(window);
+            });
+        }
+        function addMapOverlay(){
+            var markers = [
+                {content:"",title:"逸途旅行 400-178-6881",imageOffset: {width:-46,height:-21},position:{lat:39.990994,lng:116.49751}}
+            ];
+            for(var index = 0; index < markers.length; index++ ){
+                var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+                var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+                    imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+                })});
+                var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+                var opts = {
+                    width: 200,
+                    title: markers[index].title,
+                    enableMessage: false
+                };
+                var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+                marker.setLabel(label);
+                addClickHandler(marker,infoWindow);
+                map.addOverlay(marker);
+            };
+        }
+        //向地图添加控件
+        function addMapControl(){
+            var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+            scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+            map.addControl(scaleControl);
+            var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+            map.addControl(navControl);
+            var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+            map.addControl(overviewControl);
+        }
+        var map;
+        initMap();
+    })
+
+</script>
+</html>

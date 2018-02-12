@@ -1,0 +1,219 @@
+body{
+    background: #F5F5F5;
+}
+.navbar{
+    background: #000022;
+    color: #fff;
+    height: 60px;
+}
+.nav a,.nav li{
+    line-height: 60px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    z-index: 99;
+}
+.nav li{
+  padding: 0;
+}
+.nav li em{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("http://img.ppx.easyto.com/images/front/imgPc/phone.png") no-repeat center;
+    background-size: 100% 100%;
+    margin-right: 12px;
+}
+.container{
+    position: relative;
+}
+.logo{
+    position: absolute;
+    left: 0;
+    top: 22%;
+    z-index: 999;
+}
+.logo img{
+    width: 61px;
+    height: auto;
+}
+.nav a:nth-child(1) li{
+    padding-left: 60px;
+    font-size: 20px;
+}
+.nav li:nth-child(4){
+    text-align: right;
+}
+#navbar-menu ul a li:hover{
+    color: #07D7F3;
+}
+.navbar-toggle{
+    background: rgba(40,122,216,0.6);
+    margin-top: 12px;
+}
+.navbar-toggle .icon-bar{
+    background: #c9c9c9;
+}
+/*����Э��*/
+header{
+    width: 100%;
+    height: 60px;
+    background: #000022;
+}
+.con_text .service_title{
+    display: inline-block;
+    width: 3%;
+    height: auto;
+    margin-right: 3%;
+}
+footer{
+    width: 100%;
+    height: 105px;
+    background: #CBCBCB;
+}
+
+.foot{
+    width: 100%;
+    background: #CBCBCB;
+    color: #646464;
+    font-size: 12px;
+    letter-spacing: 0px;
+    text-align: center;
+    height: 105px;
+}
+ .foot ul{
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+     margin-top: 30px;
+}
+.foot ul li{
+    float: left;
+    padding: 0 10px;
+    list-style: none;
+    cursor: pointer;
+}
+.foot a{
+    color: #646464;
+    font-size: 14px;
+    cursor: pointer;
+}
+/*��������*/
+.us_banner{
+    width: 100%;
+    height: auto;
+}
+.about_us .title{
+    background: #160026;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 5% 0;
+}
+.about_us{
+    background: #fff;
+    text-align: center;
+}
+.about_us h1{
+    font-size: 20px;
+}
+.about_us .title h1 img{
+    width: 3%;
+    height: auto;
+    margin-right: 0.9%;
+}
+.about_us .title p{
+    line-height: 46px;
+}
+.us_robots{
+    padding: 4.5% 0 6%;
+    width: 66%;
+    margin: 0 auto;
+}
+.us_robots > div{
+    padding: 0 0 15px 15px;
+}
+.us_robots div div{
+    background: #F6F6F6;
+}
+
+.us_robots div >img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 19% 0;
+    margin: 0 auto;
+}
+.us_robots >div:nth-child(2) img,.us_robots >div:nth-child(5) img,
+.us_robots >div:nth-child(6) img,.us_robots >div:nth-child(8) img{
+    width: 75%;
+    height: auto;
+}
+.about_us > p{
+    line-height: 23px;
+    padding-bottom: 4.2%;
+}
+.about_us > p >a{
+    color: #FCCB6B;
+    text-decoration: none;
+}
+.about_us .partner{
+    background: #160026;
+    padding: 3% 0;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.about_us .partner > img{
+    width: 100%;
+    height: auto;
+}
+.about_us .partner h1{
+    line-height: inherit;
+}
+.about_us .partner h1 a{
+    border-bottom: 2px solid #fff;
+    padding: 10px 0;
+    color: #fff;
+    text-decoration: none;
+}
+.map{
+    padding: 0 0 5%;
+}
+.map >img{
+    width: 10%;
+    height: auto;
+    margin-right: 32%;
+}
+#map{
+    width: 70%;
+    margin: 0 auto;
+    height: 418px;
+}
+.BMapLabel{
+    position: relative!important;
+    border-color: #CACACA!important;
+    font-size: 15px!important;
+    color: #9A999A;
+    padding: 10px 10px!important;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 767px){
+    .nav li{
+        line-height: 30px;
+    }
+    .nav a:nth-child(1) li{
+        padding: 0 15px;
+    }
+    .nav li:nth-child(4){
+        text-align: left;
+    }
+    .about_us p{
+        font-size: 12px;
+    }
+    .title h1{
+        font-size: 16px;
+    }
+
+}

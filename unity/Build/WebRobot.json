@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "WebRobot.data.unityweb",
+"asmCodeUrl": "WebRobot.asm.code.unityweb",
+"asmMemoryUrl": "WebRobot.asm.memory.unityweb",
+"asmFrameworkUrl": "WebRobot.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF"
+}
